@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="somos una tienda Developer avocada a la venta de articulos relacionados con el mundo de la aprogramacion">
+    <meta name="keywords" content="html ,css ,js ,sass ,programacion , prodcutos , desarrollo web, json, script, pc , gorras, remeras, mouse">
+    <title>Proyecto_final</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" href="#">Inicio</a>
+                    </li>    
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#section-form">Contactenos</a>
+                </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="buscador"  class="form-control me-2"  type="search" placeholder="buscar producto" aria-label="Search">
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="modal-section">
+        <div class="modal fade" id="carritoModal" tabindex="-1" role="dialog" aria-labelledby="carritoModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="carritoModalLabel">Carrito de Compras</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="listaCarrito" class="list-group"></ul>
+                        <br>
+                        <div id="total"></div>
+                        <button class="btn btn-danger" onclick="limpiarCarrito()">Limpiar Carrito</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button id="Finalizar" type="button" class="btn btn-primary"  data-dismiss="modal">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h1 class="title">Te damos la bienvenida a nuestra tienda</h1>
+        <div id="contenedor-productos">
+        </div>
+    </main>
+
+    <section id="section-form">
+        <div  class="form-container" id="div-form">
+            <h2 class="title-form">Contactenos</h1>
+            <form id="formulario" >
+                <label>Nombre</label>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Email">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <input type="submit" id="submit" value="Enviar">
+            </form>
+
+        </div>
+    </section>
+
+    <footer> 
+        <h4>Developer shop</h4>
+        <div class="redes-sociales">
+            <a href="https://api.whatsapp.com/send?phone=5491112345678" target="_blank">
+                <img src="assets/icons/whatsapp-icon.svg" alt="Icono" class="icono-redes">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="assets/icons/facebook.svg" alt="Icono facebook" class="icono-redes">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="assets/icons/instagram.svg" alt="Icono instagram" class="icono-redes">
+            </a>
+            
+        </div>
+        <p class="copy">Sitio web creado por braian kandyba de Coderhouse&copy;</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script  src="js/app.js"></script>
+    
+</body>
+</html>

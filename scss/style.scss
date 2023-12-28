@@ -1,0 +1,124 @@
+@mixin flex-colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+main{
+    @include flex-colum;
+    text-align: center;
+}
+.navbar{
+    background-color: yellow;
+}
+.navbar-nav{
+    gap: 15px;
+    a{
+        font-size: 1em;
+    }
+}
+
+#contenedor-productos{
+    @include flex-colum;
+    text-align: center;
+    gap: 15px;
+}
+.title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+.producto{
+    @include flex-colum;
+    padding: 20px;
+
+    background-color: transparent;
+    p{
+        border: 1px solid black;
+        padding: 5px;
+        background-color: yellow;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        
+    }
+}
+
+@media (min-width: 768px){
+    #contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+
+.modal-body{
+    @include flex-colum;
+    gap: 15px;
+    .list-group{
+        gap: 15px;
+    }
+}
+
+@media (min-width: 992px){
+    #contenedor-productos{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+}
+
+#section-form{
+    @include flex-colum;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.form-container{
+    @include flex-colum;
+    gap: 15px;
+}
+
+#formulario{
+    @include flex-colum;
+    gap: 10px;
+    text-align: center;
+    padding: 25px;
+    border: 2px solid black;
+
+    #submit{
+        background-color: yellow
+    }
+}
+
+
+footer{
+    @include flex-colum;
+    margin-top: 20px;
+    background-color: yellow;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img{
+        width: 40px;
+        margin: 20px;
+    }
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.5);
+}

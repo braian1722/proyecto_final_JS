@@ -1,0 +1,14 @@
+[
+    {"nombre": "Remera Git Hub", "imagen": "./assets/img/remera1.jpg", "precio": 15000},
+    {"nombre": "Remera SASS", "imagen": "./assets/img/remera2.jpg", "precio": 15000},
+    {"nombre": "Remera AngularJs", "imagen": "./assets/img/remera3.jpg", "precio": 15000},
+    {"nombre": "Remera NodeJs", "imagen": "./assets/img/remera4.jpg", "precio": 15000},
+    {"nombre": "Remera Html", "imagen": "./assets/img/remera5.jpg", "precio": 17500},
+    {"nombre": "Remera JS", "imagen": "./assets/img/remera6.jpg", "precio": 21000},
+    {"nombre": "Gorra Developer", "imagen": "./assets/img/gorra7.jpg", "precio": 2000},
+    {"nombre": "Monitor 4k", "imagen": "./assets/img/monitor 4k8.jpg", "precio": 34000},
+    {"nombre": "Monitor 8k", "imagen": "./assets/img/monito 8k9.jpg", "precio": 45000},
+    {"nombre": "Teclado Mecanico", "imagen": "./assets/img/teclado_mecanico10.jpg", "precio": 23000},
+    {"nombre": "Mouse Pad", "imagen": "./assets/img/mousepad11.jpg", "precio": 3500},
+    {"nombre": "Escritorio Confort", "imagen": "./assets/img/escritorio12.webp", "precio": 28500}
+]
