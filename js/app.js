@@ -173,7 +173,7 @@ function mostrarProductosFiltrados(productosFiltrados) {
     });
 }
 
-// Resto del código...
+
 
 document.getElementById("buscador").addEventListener("input", function () {
     filtrarProductos()
@@ -190,7 +190,6 @@ document.getElementById("buscador").addEventListener("input", function () {
 
 
 
-    
     
 /// VALIDACION DE FORMULARIO
 
